@@ -72,11 +72,6 @@ export default class App extends React.Component {
         isValid: true,
         rules: {}
       },
-      // COD: {
-      //   type: "toggle",
-      //   elementConfig: {},
-      //   value: true
-      // },
       COD: {
         type: "checkbox",
         elementConfig: {
