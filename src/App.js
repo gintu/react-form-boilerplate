@@ -69,7 +69,8 @@ export default class App extends React.Component {
         },
         value: "cheapest",
         touched: false,
-        isValid: true
+        isValid: true,
+        rules: {}
       },
       // COD: {
       //   type: "toggle",
@@ -83,7 +84,8 @@ export default class App extends React.Component {
         },
         value: true,
         touched: false,
-        isValid: true
+        isValid: true,
+        rules: {}
       }
     }
   };
@@ -129,6 +131,8 @@ export default class App extends React.Component {
     for (let key in this.state.orderform) {
       data[key] = this.state.orderform[key].value;
     }
+
+    console.log(data);
   };
 
   checkValidity(value, rules) {
